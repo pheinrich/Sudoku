@@ -22,7 +22,7 @@ describe Sudoku do
       expect( r.flatten.inject( :+ ) ).to eq( 272 )
       expect( c.flatten.count ).to eq( 55 )
       expect( s[2] ).to eq( [3, 4, 5, 8, 9] )
-      expect( (r[3] & c[6] & s[7]) ).to eq( [2, 3, 7, 9] )
+      expect( (r[3] & c[6] & s[5]) ).to eq( [2, 3, 7, 9] )
     end
   end
 
